@@ -5,7 +5,7 @@
 /**
  * main - print the alphabet in lowercase without q and e
  *
- * Return Always 0
+ * Return: Always 0
  */
 int main(void)
 {
