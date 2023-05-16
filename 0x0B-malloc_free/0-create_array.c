@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- *creat_array - creating an array of chars
+ *create_array - creating an array of chars
  * @c: the char to whose address is being returned
  * @size: the size of the memory to print
  *
