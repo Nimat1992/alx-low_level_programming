@@ -5,22 +5,22 @@
  * print_list - printing all the elements of a linked list
  * @h: pointer to the first node in the list
  *
- * Returns the number of nodes printed.
+ * Return: The size of the list
  */
-
 size_t print_list(const list_t *h)
 {
-size_t count = 0;
-const list_t *current = h;
+	size_t y = 0;
 
-while (current != NULL)
-{
-printf("[%lu] %s\n", count++, current->str);
-current = current->next;
-}
+	while (h != NULL)
+	{
+		if (h->str == NULL)
+			printf("[0] (nil)\n");
+		else
+			printf("[%u] %s\n", h->len, h->str);
 
-if (current == NULL)
-printf("[0] (nil)\n");
+		h = h->next;
+		y++;
+	}
 
-	return (count);
+	return (y);
 }
